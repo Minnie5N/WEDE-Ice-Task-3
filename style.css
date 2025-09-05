@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0; /* very light pink */
+  color: #4a0033; /* deep plum for contrast */
+}
+
+/* Header */
+header {
+  background-color: #cc3366; /* bold pink */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #ff6699; /* lighter pink */
+  border-radius: 5px;
+}
+
+/* Main */
+main {
+  padding: 2rem;
+  background-color: #ffd6e8; /* soft blush */
+  min-height: 60vh;
+  border-top: 3px solid #ff99cc; /* subtle accent */
+}
+
+h1, h2 {
+  color: #99004d; /* dark rose */
+}
+
+/* Footer */
+footer {
+  background-color: #b30059; /* darker pink */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.hero img {
+  width: 100%;      /* makes it as wide as the header/footer */
+  max-height: 300px; /* controls height so it’s not too tall */
+  object-fit: cover; /* keeps proportions and crops if needed */
+  border-radius: 0;  /* removes rounded corners so it matches header/footer */
+}
